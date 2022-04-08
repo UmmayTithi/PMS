@@ -21,16 +21,30 @@
               Products
             </a>
           </li>
+
            <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{route('admin.stock.show')}}">
+              <span data-feather="stock"></span>
+              Stock
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.customer.show')}}">
               <span data-feather="users"></span>
               Customers
             </a>
           </li> 
            <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{route('admin.order.show')}}">
               <span data-feather="bar-chart-2"></span>
               order
+            </a>
+          </li> 
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="payment"></span>
+            Payment
             </a>
           </li> 
            <!-- <li class="nav-item">
