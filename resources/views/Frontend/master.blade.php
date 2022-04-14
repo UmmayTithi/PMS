@@ -27,6 +27,7 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="{{url('/frontend/assets/css/style.css')}}"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,19 +76,19 @@
 				<!-- row -->
 				<div class="row">
 <!-- section title -->
-					<div class="col-md-12">
+					<!-- <div class="col-md-12">
 						<div class="section-title">
 							<h3 class="title"> Products</h3>
 							<div class="section-nav">
 								<ul class="section-tab-nav tab-nav">
-									   @yield('content')
+									 
 								</ul>
 								
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- /section title -->
-
+					@yield('content')
 				
 					<!-- Products tab & slick -->
 					<div class="col-md-12">
@@ -159,6 +160,10 @@
 		<script src="{{url('/frontend/assets/js/nouislider.min.js')}}"></script>
 		<script src="{{url('/frontend/assets/js/jquery.zoom.min.js')}}"></script>
 		<script src="{{url('/frontend/assets/js/main.js')}}"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	</body>
 </html>

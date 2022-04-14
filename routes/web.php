@@ -28,6 +28,9 @@ Route::post('/customer/registration',[HomeController::class,'registrationFormpos
 Route::get('/customer/login/form',[HomeController::class,'loginForm'])->name('login.form');
 Route::post('/customer/login',[FrontendOrderController::class,'loginFormpost'])->name('customer.login');
 Route::get('/product/view/{id}',[FrontendOrderController::class,'showproduct'])->name('product.view');
+Route::get('/cart/view',[FrontendOrderController::class,'viewCart'])->name('cart.view');
+Route::get('/cart/add{id}',[FrontendOrderController::class,'addToCart'])->name('cart.add');
+Route::get('/cart/clear',[FrontendOrderController::class,'clearCart'])->name('cart.clear');
 
 
 //Backend

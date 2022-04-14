@@ -14,7 +14,7 @@
 					</ul>
 					<ul class="header-links pull-right">
 						
-						<li><a href="#"><i class="fa fa-user-o"></i> My Cart</a></li>
+						<li><a href="{{route('cart.view')}}"><i class="fa fa-user-o"></i> My Cart ({{session()->has('cart')?count(session()->get('cart')):0}})</a></li>
 						
 					</ul>
 					<ul class="header-links pull-right">
