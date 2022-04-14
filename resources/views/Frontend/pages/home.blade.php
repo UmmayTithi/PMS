@@ -8,7 +8,7 @@
             <div class="product-item">
               <img width="150px" src="{{url('/uploads/',$singleBiscuit->image)}}" alt="product image" style="object-fit: contain;">
               <div class="down-content">
-                <a href="#"><h4>{{$singleBiscuit->name}}</h4></a>
+                <a href="{{route('product.view',$singleBiscuit->id)}}"><h4>{{$singleBiscuit->name}}</h4></a>
                 <h6>{{$singleBiscuit->details}}</h6>
                 <p>{{$singleBiscuit->category}}</p>
                 <p>{{$singleBiscuit->quantity}}</p>

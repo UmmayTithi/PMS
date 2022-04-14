@@ -3,7 +3,7 @@
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">customer List</h1>
 
-    <a class="btn btn-success" href="{{route('customer.form')}}">Create New Customer</a>
+
 
             </div>
     <table class="table">
@@ -13,7 +13,6 @@
       <th scope="col"> name</th>
       <th scope="col"> email</th>
       <th scope="col"> role</th>
-      <th scope="col">address</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
@@ -23,9 +22,9 @@
       <th scope="row">{{$key+1}}</th>
       <!-- <th scope="row">{{$customer->id}}</th> -->
       <th scope="row">{{$customer->name}}</th>
-      <th scope="row">{{$customer->contact}}</th>
+      
       <th scope="row">{{$customer->email}}</th>
-      <th scope="row">{{$customer->address}}</th>
+      <th scope="row">{{$customer->role}}</th>
       <th scope="row">
       <a class="btn btn-primary" href="">Edit</a>
           <a class="btn btn-danger" href="">Delete</a>

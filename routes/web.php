@@ -4,10 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\Backend\UserController;
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\CustomerController;
-use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\FrontendOrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +25,9 @@ use App\Http\Controllers\Frontend\HomeController;
 Route::get('/home',[HomeController::class,'home'])->name('home');
 Route::get('/customer/registration/form',[HomeController::class,'registrationForm'])->name('registration.form');
 Route::post('/customer/registration',[HomeController::class,'registrationFormpost'])->name('customer.registration');
-
-
+Route::get('/customer/login/form',[HomeController::class,'loginForm'])->name('login.form');
+Route::post('/customer/login',[FrontendOrderController::class,'loginFormpost'])->name('customer.login');
+Route::get('/product/view/{id}',[FrontendOrderController::class,'showproduct'])->name('product.view');
 
 
 //Backend

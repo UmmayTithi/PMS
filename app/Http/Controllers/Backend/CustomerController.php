@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Models\Customer;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -10,7 +10,7 @@ class CustomerController extends Controller
 {
     
     public function customer(){ 
-        $customers =Customer::all();
+        $customers =User::all();
         return view('backend.pages.Customer.Customer',compact('customers'));
     }
     public function customerForm(){

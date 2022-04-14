@@ -15,10 +15,13 @@
             </a>
           </li>
           
+          
+          
           <li class="nav-item">
             <a class="nav-link" href="{{route('admin.product.show')}}">
               <span data-feather="shopping-cart"></span>
               Products
+              
             </a>
           </li>
 

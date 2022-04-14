@@ -38,6 +38,24 @@ class HomeController extends Controller
             return redirect()->route('home');
 
         }
-        
+
+        public function loginForm(){
+            return view('Frontend.pages.login');
+        }
+        public function loginFormpost(request $request){
+            //  dd($request->all());
+            $request->validate([
+                'email'=>'required|email',
+                'password'=>'required',
+            ]);
+            // dd($request->all());
+            $credentials=$request->except('_token');
+    
+            if (auth()->attempt($credentials))
+            {
+                return redirect()->route('home');
+            }
+            return redirect()->back()->with('message','invalid credentials');
+        }
 
 }

@@ -13,9 +13,15 @@
 						
 					</ul>
 					<ul class="header-links pull-right">
+						
+						<li><a href="#"><i class="fa fa-user-o"></i> My Cart</a></li>
+						
+					</ul>
+					<ul class="header-links pull-right">
 					<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
-					
-						<li><a href="{{route('registration.form')}}"><i class="fa fa-user-o"></i> Registration/login</a></li>
+					@if(auth()->user())
+						<li><a href="{{route('registration.form')}}"><i class="fa fa-user-o"></i>{{auth()->user()->name}} Registration/login/logout</a></li>
+					@endif
 					</ul>
 				</div>
 			</div>
